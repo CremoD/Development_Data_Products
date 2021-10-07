@@ -1,0 +1,22 @@
+POC for Santander Cycles on-premise tool
+
+Requirements: Python 3.8 and Pip
+
+POC uses data from 2012 to 2014 made available by the company, and shows how the two main functionalities of the on-premise software will work:
+- analyse past data
+- predict future bike sharings (5 days prediction) 
+
+
+---------------------------------------------------------------------------
+Instruction to run the POC script, lunch on terminal inside the POC folder
+1) Execute the following command: pip install -r requirments.txt
+2) Execute the following command: python SantanderTool.py
+---------------------------------------------------------------------------
+
+
+
+
+UPDATE WITH NEW DATA
+- Moreover, if new data have been collected and you want to update them for analysis, supposing new data is in the "usage" folder, before starting the script, execute the following command: python Preprocessing.py.
+This command will take some minutes to complete, depending on the size of the data to be updated.
+- Also the ML training algorithm may be updated to fit on new data. After having executed the previous command to update data, execute the following command before starting the script: python BikeRegression.py
